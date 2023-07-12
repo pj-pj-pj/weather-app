@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+:root {
+  --bg: rgb(23, 32, 50);
+  --border: #ffffff;
+  --text: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +21,105 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  color: var(--text);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 5% 8%;
+}
+
+.info-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 5%;
+}
+
+.info-1 .cloud {
+  font-size: 35px;
+}
+
+.info-1 h1 {
+  font-size: 38px;
+}
+
+.info-1 .location {
+  font-size: 20px;
+}
+
+.info-1 img {
+  max-width: 140px;
+  opacity: 0.85;
+  filter: brightness(150%);
+}
+
+#search-box {
+  display: flex;
+  gap: 10px;
+}
+
+#search-btn {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-btn:hover,
+input:hover {
+  filter: invert(20%);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: inherit;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+.i2-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 15px;
+  grid-gap: 5px 8px;
+  align-items: center;
+}
+
+.i2-container img {
+  max-width: 30px;
+  grid-row: 1 / -1;
+  filter: invert(100%);
+}
+
+.i2-container h3 {
+  grid-column: 2 / -1;
+}
+
+#dayornight {
+  min-height: 280px;
+  background-size: cover;
+  margin: 0 8% 20px;
+}
+
+.warning-msg {
+  margin: 10px;
 }
 
 footer {
