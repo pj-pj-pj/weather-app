@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>weather.io</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <main>
+      <container>
+        <div class="info-1"></div>
+        <div id="search-box">
+          <input type="text" placeholder="Search location" />
+          <button id="search-btn">🔍</button>
+        </div>
+        <div class="warning-msg"></div>
+      </container>
+      <div class="info-2"></div>
+    </main>
+
+    <div id="dayornight"></div>
+    <footer><p>Copyright © 2023 by PJ</p></footer>
+    <script src="bundle.js"></script>
   </body>
 </html>
